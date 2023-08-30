@@ -1,8 +1,32 @@
-.row {
-  display: -ms-flexbox;
+.nested-sortable,
+.nested-1,
+.nested-2,
+.nested-3 {
+  margin-top: 10px;
+  width: 89%;
+}
+
+.list-group-item:hover {
+  z-index: 0;
+}
+
+.nested-1 {
+  background-color: #e6e6e6;
+}
+
+.nested-2 {
+  background-color: #cccccc;
+}
+
+.nested-3 {
+  background-color: #b3b3b3;
+}
+
+.list-group {
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  flex-direction: column;
+
+  // No need to set list-style: none; since .list-group-item is block level
+  padding-left: 0; // reset padding because ul and ol
+  margin-bottom: 0;
 }
